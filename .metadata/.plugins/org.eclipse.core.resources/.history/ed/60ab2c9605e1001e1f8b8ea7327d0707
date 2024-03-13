@@ -1,0 +1,27 @@
+package com.icia.board.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Controller
+@Slf4j
+public class MemberController {
+
+	@GetMapping("/")
+	public String home() {
+		log.info("home()");
+		return "index";
+	
+	}
+	
+	@GetMapping("LoginForm")
+	public String LoginForm() {
+		log.info("LoginForm()");
+		return "LoginForm";
+	}
+	
+	
+	
+}

@@ -1,0 +1,31 @@
+package com.icia.board.serivce;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.icia.board.dao.MemberDao;
+import com.icia.board.dto.MemberDto;
+
+import jakarta.servlet.http.HttpSession;
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class MemberService {
+	@Autowired
+	private MemberDao mDao;
+	
+	//로그인 처리 메서드
+	public String loginProc(MemberDto member,
+			HttpSession session, RedirectAttributes rttr) {
+		log.info("loginProc()");
+		
+		String view = null;
+		String msg = null;
+		
+		return view;
+	}
+	
+
+}

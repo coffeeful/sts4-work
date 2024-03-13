@@ -1,0 +1,5 @@
+package com.icia.board.serivce;
+
+public class MemberService {
+
+}

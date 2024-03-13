@@ -1,0 +1,18 @@
+Thymeleaf
+
+1) 기본 사용법
+<html>에 xmlns:th 속성을 부여.
+	<html xmlns:th="http://www.thymeleaf.org">
+	
+2) 데이터 출력
+	표현식 : ${식별자}, @{url}, *{member_variable}
+	
+	특정 html 요소에 문자열(숫자 포함) 출력용 속성 : 
+	th:text - innerText(문자열로만 출력), [[${...}]]
+	th:utext - innerHTML(하위 요소용 태그를 처리), [(${...})]
+		<p th:text="${'제목 : +'data}"></p>
+		
+ controller에서 보내는 방식은 spring legacy와 동일하다.
+ 
+ 
+	

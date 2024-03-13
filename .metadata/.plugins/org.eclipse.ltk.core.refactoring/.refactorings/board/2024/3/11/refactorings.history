@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;summary.txt&apos; to &apos;board&apos;" description="Move &apos;summary.txt&apos; to &apos;board&apos;" destination="/board" element1="src/summary.txt" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1710302984568" updateReferences="true"/>
+</session>

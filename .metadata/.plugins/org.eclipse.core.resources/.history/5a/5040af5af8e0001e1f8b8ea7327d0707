@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div th:fragment="header(member)" class="top-bar">
+	<div class="content">
+		<img src="images/r-logo.jpg" alt="로고"
+		class="top-left logo" onclick="gohome()">
+		<h2 class="top-left top-home">Data-SCI Board</h2>
+		<nav class="top-right">
+		<ul>
+			<th:block th:if="${member == null}">
+			<li><a th:href="@{LoginForm}">Login</a></li>
+			<li><a th:href="@{JoinForm}">Join</a></li>
+			</th:block>
+			<th:block th:unless="${member == null}">
+			<li th:text="${member.m_id}+'님'"></li>
+			<li><a th:href="@{Logout}">Logout</a></li>
+			</th:block>
+		</ul>
+		</nav>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
